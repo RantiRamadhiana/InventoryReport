@@ -45,7 +45,7 @@ public class LoginForm extends AppCompatActivity {
         ipaddress = (EditText) findViewById(R.id.ipaddress);
         sign_in_login = (Button) findViewById(R.id.sign_in_login);
 
-        ipaddress.setText("10.30.1.230");
+        ipaddress.setText("xx.xx.x.xxx"); //ip adrress
 
         requestqueue = Volley.newRequestQueue(this);
         username.requestFocus();
