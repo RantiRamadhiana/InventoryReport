@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/logout"
+        android:title="LogOut"
+        android:icon="@drawable/exit_icon">
+    </item>
+    <item android:id="@+id/barcode"
+        android:title="Instrument Usage"
+        android:icon="@drawable/timbangmasuk">
+    </item>
+    <item android:id="@+id/materialusage"
+        android:title="Material Usage"
+        android:icon="@drawable/timbangmasuk">
+    </item>
+    <item android:id="@+id/cleanlinesscek"
+        android:title="RL Cleanliness Check"
+        android:icon="@drawable/timbangmasuk">
+    </item>
+    <item android:id="@+id/hystory"
+        android:title="Instrument Historical Maintenance"
+        android:icon="@drawable/timbangmasuk">
+    </item>
+</menu>

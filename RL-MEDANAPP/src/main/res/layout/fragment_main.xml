@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:fitsSystemWindows="true"
+        android:foregroundGravity="center|center_vertical|center_horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <SurfaceView
+                android:id="@+id/surface_view"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="60dp"
+                />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/id_truck_input"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlineBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorAccent"
+                >
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/barcode_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    app:layout_constraintTop_toBottomOf="@id/surface_view"
+                    android:layout_marginTop="50dp"
+                    android:text=""
+                    android:textSize="25sp"
+                    android:padding="5dp"
+                    android:enabled="false"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/id_tujuantxt"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlineBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorAccent"
+                >
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/usagetxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    app:layout_constraintTop_toBottomOf="@id/id_truck_input"
+                    android:layout_marginTop="50dp"
+                    android:hint="Tujuan Penggunaan"
+                    android:textSize="20sp"
+                    android:padding="5dp"/>
+            </android.support.design.widget.TextInputLayout>
+            <RadioGroup
+                android:id="@+id/groupstat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/okchc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oke"
+                    android:checked="true"/>
+                <RadioButton
+                    android:id="@+id/notokechc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rusak"
+                    android:checked="false"/>
+            </RadioGroup>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/btnbarcode2"
+                android:text="SAVE USAGE"
+                android:background="@drawable/custom2"
+                android:visibility="visible"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btnmtn"
+                android:text="History Maintenance"
+                android:background="@drawable/custom4"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

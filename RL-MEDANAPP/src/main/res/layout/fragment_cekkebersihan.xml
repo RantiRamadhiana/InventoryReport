@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".cekkebersihan">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:fitsSystemWindows="true"
+    android:foregroundGravity="center|center_vertical|center_horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="100dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cek Kebersihan Area RL"
+            android:textColor="#777"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <CheckBox
+            android:id="@+id/ranalisa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kebersihan Ruang Analisa"
+            android:layout_marginTop="30dp"
+            android:textColor="#777"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="#fff" /><!-- black background for the background of check box-->
+
+        <CheckBox
+            android:id="@+id/radministrasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Kebersihan Ruang Administrasi"
+            android:textColor="#777"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="#fff" /><!-- black background for the background of check box-->
+
+        <CheckBox
+            android:id="@+id/rtimbang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Kebersihan Ruang Timbang"
+            android:textColor="#777"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="#fff" /><!-- black background for the background of check box-->
+
+        <CheckBox
+            android:id="@+id/rasam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Kebersihan Ruang Asam"
+            android:textColor="#777"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="#fff" /><!-- black background for the background of check box-->
+
+        <CheckBox
+            android:id="@+id/roven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Kebersihan Ruang Oven"
+            android:textColor="#777"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="#fff" /><!-- black background for the background of check box-->
+
+        <CheckBox
+            android:id="@+id/dinding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Kebersihan Dinding dan Kaca"
+            android:textColor="#777"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="#fff" /><!-- black background for the background of check box-->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="40dp"
+            android:id="@+id/btnsave"
+            android:text="SAVE CHECKLIST"
+            android:background="@drawable/custom2"
+            android:visibility="visible"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ipaddr2id"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlineBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorAccent">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/ipaddtxt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                app:layout_constraintTop_toBottomOf="@id/btnsave"
+                android:layout_marginTop="50dp"
+                android:hint="IP ADDRESS"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:enabled="false"
+                android:visibility="visible"/>
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>
